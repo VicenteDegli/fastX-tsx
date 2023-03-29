@@ -1,0 +1,7 @@
+.siders{
+    width: 10%;
+    height: auto;
+    background-image: url("../../assets/battimenSiders.jpg");
+    image-rendering: optimizeQuality;
+    background-size:contain;
+}
