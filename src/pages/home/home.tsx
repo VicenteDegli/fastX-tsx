@@ -1,15 +1,15 @@
-import Header from '../../components/header/header';
-import Video from '../../assets/trailer.mp4';   
+import Header from '../../components/header/header'; 
 import Cards from '../../components/cards/cards';
 import Footer from '../../components/footer/footer';
 import { Banner, Button, Description, Sinopse, TrailerContainer, TrailerContent, VideoContent} from './style';
 import PosterImg from '../../assets/traler-img.jpg';
+import Video from '../../assets/trailer.mp4';
 
 function Home(){
     return(
         <>
             <Header/>
-            <Banner id="banner"></Banner>
+            <Banner></Banner>
             <TrailerContainer>
                 <TrailerContent>
                     <VideoContent controls className="trailer" poster={PosterImg}>

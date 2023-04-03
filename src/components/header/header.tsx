@@ -8,7 +8,7 @@ function Header(){
             <ImgContainer alt="" src={Logo} />
             <NavComponent>
                 <UlComponent>
-                    <Link style={{textDecoration: 'none'}} to='/'>
+                    <Link  to='/'>
                         <ListItem className='liHeader'>home</ListItem>
                     </Link>
                     <Link style={{textDecoration: 'none'}} to='/contatos'>

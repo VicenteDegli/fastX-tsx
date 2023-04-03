@@ -6,8 +6,7 @@ import Banner3 from '../../assets/johnCenaCard.jpg';
 function Cards(){
     return(
         <ActorCardsContainer>
-            <CardsContent>
-                
+            <CardsContent>  
                 <Card img={Banner1}>Vin Diesel - Diminic Toretto</Card>
                 <Card img={Banner2}>Jason Mamoa - Dante</Card>
                 <Card img={Banner3}>John Cena - Jakob Toretto</Card>
