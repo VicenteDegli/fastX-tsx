@@ -4,7 +4,6 @@ import Footer from "../../components/footer/footer";
 import Form from "../../components/form/form";
 import Header from "../../components/header/header";
 import { Coment, FormContext } from "../../contexts/formContext";
-import './styles.css';
 
 function Comentarios(){
     

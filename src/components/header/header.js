@@ -1,28 +1,28 @@
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/logo.png';
-import './styles.css';
+import { HeaderComponent, ImgContainer, ListItem, NavComponent, UlComponent } from './styles';
 
 function Header(){
     return(
-        <header>
-            <img alt="" id="logo" src={Logo} />
-            <nav>
-                <ul>
+        <HeaderComponent>
+            <ImgContainer alt="" src={Logo} />
+            <NavComponent>
+                <UlComponent>
                     <Link style={{textDecoration: 'none'}} to='/'>
-                        <li className='liHeader'>home</li>
+                        <ListItem className='liHeader'>home</ListItem>
                     </Link>
                     <Link style={{textDecoration: 'none'}} to='/contatos'>
-                        <li className='liHeader'>Contato</li>
+                        <ListItem className='liHeader'>Contato</ListItem>
                     </Link>
                     <Link style={{textDecoration: 'none'}} to='/fotos'>
-                        <li className='liHeader'>Fotos</li>
+                        <ListItem className='liHeader'>Fotos</ListItem>
                     </Link>
                     <Link style={{textDecoration: 'none'}} to='/comentarios'>
-                        <li className='liHeader'>Comentários</li>
+                        <ListItem className='liHeader'>Comentários</ListItem>
                     </Link>
-                </ul>
-            </nav>
-        </header>
+                </UlComponent>
+            </NavComponent>
+        </HeaderComponent>
     )
 }
 

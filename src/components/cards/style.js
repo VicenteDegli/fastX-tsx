@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+import styled from 'styled-components';
 
-.actor-cards-containers{
+export const ActorCardsContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    background-color: black;
-}
+    padding-top: 50px;
+    background-color: #000;
+`;
 
-.cards-content{
+export const CardsContent = styled.div`
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 20px;
     column-gap: 40px;
-}
+`;
 
-.card{
+export const Card = styled.div`
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -31,20 +35,8 @@
     color: #fff;
     font-size: 17px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.card:hover{
-    transform: scale(1.02);
-}
-
-.banner-1{
-    background-image: url('../../assets/vinDieselCard.jpg');
-}
-
-.banner-2{
-    background-image: url("../../assets/jasonMamoaCard.jpg");
-}
-
-.banner-3{
-    background-image: url('../../assets/johnCenaCard.jpg');
-}
+    background-image: url(${(props) => props.img});
+    &:hover{
+        transform: scale(1.02);
+    }
+`;

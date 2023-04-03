@@ -1,31 +1,31 @@
-import './styles.css';
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { FooterLogo, FooterSpan, FooterContainer, FooterNavigation, FooterList, ListItem } from "./style";
 
 function Footer(){
     return(
-        <footer>
-            <img style={{objectFit: 'contain'}} id="logo" src={Logo} alt=""/>
-            <span className="footerSpan">Todos os direitos reservados ©</span>
-            <span className="footerSpan">Desenvolvido por: Vicente de Paulo</span>
+        <FooterContainer>
+            <FooterLogo src={Logo} alt=""/>
+            <FooterSpan>Todos os direitos reservados ©</FooterSpan>
+            <FooterSpan>Desenvolvido por: Vicente de Paulo</FooterSpan>
 
-            <nav className="footer-navigation">
-                <ul className="footer-list">
+            <FooterNavigation>
+                <FooterList>
                     <Link to='/' style={{textDecoration: 'none'}}>
-                        <li className='liFooter'>Home</li>
+                        <ListItem>Home</ListItem>
                     </Link>
                     <Link to='/contatos' style={{textDecoration: 'none'}}>
-                        <li className='liFooter'>Contatos</li>
+                        <ListItem>Contatos</ListItem>
                     </Link>
                     <Link to='/fotos' style={{textDecoration: 'none'}}>
-                        <li className='liFooter'>Fotos</li>
+                        <ListItem>Fotos</ListItem>
                     </Link>
                     <Link to='/comentarios' style={{textDecoration: 'none'}}>
-                        <li className='liFooter'>Comentários</li>
+                        <ListItem>Comentários</ListItem>
                     </Link>
-                </ul>
-            </nav>
-        </footer>
+                </FooterList>
+            </FooterNavigation>
+        </FooterContainer>
     )
 }
 
